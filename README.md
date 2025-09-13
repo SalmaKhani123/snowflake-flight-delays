@@ -1,5 +1,5 @@
 # snowflake-flight-delays
-**What this is:** My first Snowflake + GitHub project. I ingested a large DOT/BTS flights CSV into Snowflake, applied simple cleaning rules, and ran basic analyses.
+**What this is:** My first solo Snowflake project. I ingested a large DOT/BTS flights CSV into Snowflake, applied simple cleaning rules, and ran basic analyses.
 
 **How to run (in Snowsight):**
 1) Run `sql/01_workspace_setup.sql`
