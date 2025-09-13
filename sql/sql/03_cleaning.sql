@@ -21,3 +21,11 @@ FROM flights;
 -- Quick check
 SELECT COUNT(*) AS rows_clean FROM flights_clean;
 SELECT * FROM flights_clean LIMIT 10;
+
+## Results (from my run)
+- rows_total: **3,000,000**
+- DEP delay min/max: **19393 / 20452**  ← looks off (mapping to fix later)
+- ARR delay min/max: **1 / 9562**       ← looks off (mapping to fix later)
+- CANCELLED counts: **TRUE=0, FALSE=0** ← indicates CANCELLED not populated
+
+_Note:_ Delay and cancelled columns need remapping; analysis uses robust queries that don’t depend on them until fixed.
