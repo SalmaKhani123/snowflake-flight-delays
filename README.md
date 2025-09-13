@@ -18,3 +18,7 @@
 - `IFF` error → `CANCELLED` is 0/1, so I used `CANCELLED = 1` / `CANCELLED = 0`.
 - “No results” on some queries → Removed strict HAVING filters; used `ARR_DELAY IS NOT NULL`.
 - Current caveat → `ARR_DELAY/DEP_DELAY` look noisy; KPIs run from raw table while I refine cleaning.
+
+## Findings (from my run)
+- Overall on-time (A15): **0.34%**
+- Note: ARR/DEP delays look off in v1 (mapping quirk). KPIs run from raw table; mapping fix planned in v2.
